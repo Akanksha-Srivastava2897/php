@@ -10,7 +10,12 @@ RUN apt-get update \
 && apt-get clean \
 && rm -rf var/lib/apt/list*
 
+#Environment Variable
+
 ENV php_conf /etc/php/7.4/php.ini
+
+#Working directory
+
 WORKDIR /var/www/html
 CMD ["echo" "php7.4 installed"]
 
