@@ -12,7 +12,6 @@ pipeline {
         stage('Build') {
             steps {
                     git credentialsId: 'feaaf2b8-524d-4ead-bdba-65d12938a0ff', url: 'https://github.com/akanksha2897/php.git'
-		    docker-compose.yml
                     bat label: '', script: 'build: ./docker/php/Dockerfile'
                     bat label: '', script: 'build: ./docker/node js/Dockerfile'
                     }
