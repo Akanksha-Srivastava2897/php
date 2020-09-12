@@ -13,7 +13,7 @@ pipeline {
             steps {
                     git credentialsId: 'feaaf2b8-524d-4ead-bdba-65d12938a0ff', url: 'https://github.com/akanksha2897/php.git'
                     bat label: '', script: 'docker build -f Dockerfile .'
-                    bat label: '', script: 'docker build -f Dockerfile .'
+                    bat label: '', script: 'docker build -f Dockerfile (2) .'
                     }
            }
         stage('Test') {
